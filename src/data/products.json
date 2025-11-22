@@ -4,7 +4,7 @@
         "name": "Алмазные диски",
         "description": "Высокопроизводительные диски для резки бетона и камня.",
         "price": "От 5000 ₽",
-        "image": "/placeholder.jpg",
+        "image": "/images/diamond_blade.png",
         "category": "резка"
     },
     {
@@ -12,7 +12,7 @@
         "name": "Коронки алмазного бурения",
         "description": "Точные коронки для армированного бетона.",
         "price": "От 8000 ₽",
-        "image": "/placeholder.jpg",
+        "image": "/images/core_drill.png",
         "category": "бурение"
     },
     {
@@ -20,7 +20,7 @@
         "name": "Шлифовальные чашки",
         "description": "Износостойкие чашки для подготовки поверхности.",
         "price": "От 3000 ₽",
-        "image": "/placeholder.jpg",
+        "image": "/images/grinding_cup.png",
         "category": "шлифовка"
     },
     {
@@ -28,7 +28,7 @@
         "name": "Полировальные пады",
         "description": "Гибкие пады для идеальной финишной обработки.",
         "price": "От 1500 ₽",
-        "image": "/placeholder.jpg",
+        "image": "/images/polishing_pad.png",
         "category": "полировка"
     }
 ]

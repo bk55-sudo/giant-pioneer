@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import products from "@/data/products.json";
@@ -18,13 +19,13 @@ export function ProductGrid() {
                 <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
                     {products.map((product) => (
                         <div key={product.id} className="group relative bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow overflow-hidden border border-gray-100">
-                            <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-60">
-                                <div className="h-full w-full flex items-center justify-center bg-gray-100 text-gray-400">
-                                    {/* Placeholder for actual image */}
-                                    <span className="text-4xl font-bold opacity-20">
-                                        {product.name.charAt(0)}
-                                    </span>
-                                </div>
+                            <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-60 relative">
+                                <Image
+                                    src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}${product.image}`}
+                                    alt={product.name}
+                                    fill
+                                    className="object-cover object-center"
+                                />
                             </div>
                             <div className="p-4">
                                 <h3 className="text-sm font-medium text-gray-900">

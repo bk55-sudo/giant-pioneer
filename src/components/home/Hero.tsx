@@ -8,7 +8,10 @@ export function Hero() {
             <div className="absolute inset-0 z-0 opacity-20">
                 <div className="absolute inset-0 bg-gradient-to-r from-gray-900 to-transparent" />
                 {/* Placeholder for background image */}
-                <div className="h-full w-full bg-[url('https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80')] bg-cover bg-center" />
+                <div
+                    className="h-full w-full bg-cover bg-center"
+                    style={{ backgroundImage: `url('${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/hero.png')` }}
+                />
             </div>
 
             <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

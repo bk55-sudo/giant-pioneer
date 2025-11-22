@@ -1,6 +1,7 @@
 import { Hero } from "@/components/home/Hero";
 import { Stats } from "@/components/home/Stats";
 import { ProductGrid } from "@/components/products/ProductGrid";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -25,9 +26,12 @@ export default function Home() {
               </p>
             </div>
             <div className="mt-10 lg:mt-0 relative h-64 sm:h-80 lg:h-full min-h-[300px] bg-gray-100 rounded-lg overflow-hidden">
-              <div className="absolute inset-0 bg-gray-200 flex items-center justify-center">
-                <span className="text-gray-400 font-medium">Изображение О Нас</span>
-              </div>
+              <Image
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/images/about_us.png`}
+                alt="About Us"
+                fill
+                className="object-cover object-center"
+              />
             </div>
           </div>
         </div>
